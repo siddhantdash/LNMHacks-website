@@ -315,7 +315,7 @@ a img{
 
 .lnmhacks-wear-section {
   position: relative;
-  background: url('images/wear.png') center top no-repeat;
+  background: url('images/wear.jng') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
@@ -689,18 +689,18 @@ body, body * {
 .demo-card-square > .mdl-card__title-code {
   color: #fff;
   background:
-    url('images/code.png') center 15% no-repeat #fff;
+    url('images/code.jpg') center 15% no-repeat #fff;
 }
 
 .demo-card-square > .mdl-card__title-design {
   color: #fff;
   background:
-    url('images/design.png') center 15% no-repeat #fff;
+    url('images/design.jpg') center 15% no-repeat #fff;
 }
 .demo-card-square > .mdl-card__title-ideate {
   color: #fff;
   background:
-    url('images/ideate.png') center 15% no-repeat #fff;
+    url('images/ideate.jpg') center 15% no-repeat #fff;
 }
 
 
