@@ -17,8 +17,225 @@
 -->
 
 <html lang="en">
-  <head></head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on lnmhacks.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>LNMHacks 2016</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
   <body>
-    Test
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="lnmhacks-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="lnmhacks-title mdl-layout-title">
+            <img class="lnmhacks-logo-image" src="images/lnmhacks-logo.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="lnmhacks-header-spacer mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <div class="lnmhacks-navigation-container">
+            <nav class="lnmhacks-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#about">About</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#tracks">tracks</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#sponsors">Sponsors</a>
+              
+
+              <!-- REGISTERATION CTA -->
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://lnmhacks.typeform.com/to/EvSEUP" style="color:#fff; background:#4285f4 !important; width:10%;">Register</a>
+              
+            </nav>
+          </div>
+          <span class="lnmhacks-mobile-title mdl-layout-title">
+            <img class="lnmhacks-logo-image" src="images/lnmhacks-logo.png">
+          </span>
+        </div>
+      </div>
+
+
+
+          
+
+      <div class="lnmhacks-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="lnmhacks-be-together-section mdl-typography--text-center" >
+          <!-- <div class="hero">
+            <img src="images/layer1.png" alt=" " />
+            <img src="images/layer2.png" alt=" " />
+            <img src="images/sun.png" alt=" " />
+            <img src="images/clouds.png" alt=" " />
+          </div> -->
+          <div id='hero-mobile'></div>
+          <img class="lnmhacks-logo" src="images/lnmhacks-16.svg">
+          <div class="logo-font lnmhacks-slogan"><i><span style="color:#fff">JOIN THE</span> #HACKSQUAD</i></div>
+          <div class="logo-font lnmhacks-sub-slogan" style="font-family: 'Titillium Web', sans-serif; font-weight:light; color:#282045">October 14-15 | Jaipur</div>
+          <div class="logo-font register-cta" style="color:#282146;">
+            Registerations Open Now
+          </div>            
+        </div>
+        
+
+        <div class="lnmhacks-screen-section mdl-typography--text-center" id="about">
+          <a name="screens"></a>
+          <div class="mdl-typography--display-1-color-contrast mdl-typography--font-bold">WHAT IS LNMHacks?</div>
+          <div class="hack-description">
+            <p class="mdl-typography--headline mdl-typography--font-light">
+              LNMHacks is <a href="http://lnmiit.ac.in" style="text-decoration:none;">LNMIIT</a>’s headline hackathon run by students. Over a 24-hour period , hackers collaborate and experiment on software projects and ideas. This is the weekend to meet other enthusiastic hackers, push your boundaries. From apprentices to the Pros you'll find a good mix of skills and ideas. You don't need to be an expert to attend the event. Just make something that might change the world.
+            </p>
+
+              <!--================================
+              =            Cards-Type            =
+              =================================-->
+
+              <div class="mdl-grid" >
+
+                <div class="mdl-cell mdl-cell--4-col" style="margin-left:auto; margin-right:auto">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title-code mdl-card--expand">
+                     
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Develop some innovative apps using the APIs we provide. Code in the language of your like and build something really cool.
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--4-col">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title-design mdl-card--expand">
+                      
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Design is an important aspect of a produt. Create wireframes and interfaces that might become the next Tinder or Uber.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--4-col">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title-ideate mdl-card--expand">
+                      
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Ideas matter even though execution is the game. We'll be happy to onboard thinkers and doers alike. Make sure to solve real world problems.
+                    </div>
+                    
+                  </div>
+                </div>
+ 
+              </div>
+              
+              <!--====  End of Cards-Type  ====-->
+              
+          </div>
+        </div>
+        <div class="lnmhacks-wear-section">
+          <div class="lnmhacks-wear-band">
+            <div class="lnmhacks-wear-band-text">
+              <div id="tracks" class="mdl-typography--display-2 mdl-typography--font-thin">Tracks</div>
+              <p class="mdl-typography--headline mdl-typography--font-thin">
+                We're rolling out tracks soon.
+              </p>
+              <p>
+                <a class="mdl-typography--font-regular mdl-typography--text-uppercase lnmhacks-alt-link" href="https://twitter.com/lnmhacks">
+                  Stay updated through our twitter #LNMHacks&nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!--====================================
+        =            Custom Section            =
+        =====================================-->
+        
+        <div class="lnmhacks-customized-section">
+          
+          <div class="lnmhacks-customized-section-image">
+            <div class="lnmhacks-customized-section-text ">
+              <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast head-text">Make Things and Break Things</div>
+              <p class="mdl-typography--font-light base-text">
+                Whether a web app or a mobile app or just some random thought that could possibly solve a real world problem , we're excited to see what you make and how you make. You can create the next big tech thing in the world. The winners will have a chance to become a part of the <span style="font-family:'Tillitium',sans-serif; color:#f44645;"><i>#hacksquad</i></span>.
+                <br><br>
+                <a href="" class="lnmhacks-link mdl-typography--font-light typeform-share button" href="https://lnmhacks.typeform.com/to/EvSEUP" data-mode="1" target="_blank">Register Now</a>
+              </p>
+          </div></div>
+        </div>
+        
+        
+        <!--====  End of Custom Section  ====-->
+
+        <!--==================================
+        =            Sponsors Section            =
+        ===================================-->
+        <div class="lnmhacks-customized-section" id="sponsors">
+          
+          <div class="lnmhacks-sponsors-section-image">
+            <div class="lnmhacks-customized-section-text ">
+              <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast head-text">Sponsors</div>
+              <p class="mdl-typography--font-light base-text">
+                We're in talks with the big players for sponsorship right now. Interested in sponsoring us ?  
+                <br><br>Mail us at : 
+                <a href="" class="lnmhacks-link mdl-typography--font-light" href="mailto:sponsors@lnmhacks.com?subject=Sponsorship proposal"target="_blank">sponsors@lnmhacks.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <footer class="lnmhacks-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <a class="mdl-mega-footer--social-btn" href="https://www.facebook.com/lnmhacks/" style="color:#2ec3db !important;"><i class="fa fa-facebook fa-2x"></i></a>
+              &nbsp;
+              <a class="mdl-mega-footer--social-btn" href="https://twitter.com/lnmhacks" style="color:#2ec3db !important;"><i class="fa fa-twitter fa-2x"></i></a>
+              &nbsp;
+              <a class="mdl-mega-footer--social-btn" href="https://medium.com/@lnmhacks" style="color:#2ec3db !important;"><i class="fa fa-medium fa-2x"></i></a>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">© 2016 LNMHacks.</p>
+            <p class="mdl-typography--font-light">More information coming soon. Stay updated through our social channels. Join the #hacksquad.</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <a class="lnmhacks-link mdl-typography--font-light" href="https://medium.com/lnmhacks">Publication</a>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
   </body>
 </html>
