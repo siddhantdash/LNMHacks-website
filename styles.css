@@ -22,6 +22,7 @@ body {
 a img{
   border: 0px;
 }
+
 /*========================================
 =            Themed Selection            =
 ========================================*/
@@ -315,8 +316,10 @@ a img{
 
 .lnmhacks-wear-section {
   position: relative;
-  background: url('images/wear.jpg') center top no-repeat;
-  background-size: cover;
+  background: url('images/wear.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 800px;
 }
 
@@ -375,11 +378,12 @@ a img{
 }
 
 .lnmhacks-customized-section-text {
-  max-width: 500px;
-  margin-left: 6em;
-  margin-top: 5em;
+  
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 3em;
   padding: 80px 16px 0 16px;
-  text-align: left;
+  text-align: center;
 }
 
 .head-text{
@@ -387,10 +391,14 @@ a img{
   line-height: 1.25;
 }
 .base-text{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right:auto;
+  text-align: center;
   margin-top:10px;
   font-size: 1.3em;
   font-weight:lighter;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
   .lnmhacks-customized-section-text p {
@@ -398,15 +406,15 @@ a img{
   }
 
 .lnmhacks-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
+  background: #fff;
   background-size: cover;
-  height: 400px;
+  min-height: 250px;
 }
 
 .lnmhacks-sponsors-section-image {
-  background: url('images/sponsors.jpg') center top no-repeat;
+  background: #fff;
   background-size: cover;
-  height: 400px;
+  min-height: 400px;
 }
 
 .lnmhacks-more-section {
@@ -582,98 +590,6 @@ a img{
 
 /*=====  End of Basic Overides  ======*/
 
-/*=====================================
-=            Hero Parallax            =
-=====================================*/
-/*
-#hero {
-  height: 800px;
-  overflow: hidden;
-  position: relative;
-}
-
-#hero-mobile {
-  display: none;
-  background: url("images/slide01.jpg") no-repeat center bottom/cover;
-  height: 320px;
-}
-
-#hero, .layer {
-  min-height: 800px;
-}
-
-
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-body {
-  overflow: auto;
-  -webkit-perspective: 1px;
-          perspective: 1px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-body, body * {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.hero {
-  padding: 10%;
-  max-width: 40em;
-  margin: auto;
-}
-.hero :nth-child(1) {
-  -webkit-transform: translateZ(-0.4px) scale(1.4);
-          transform: translateZ(-0.4px) scale(1.4);
-  z-index: -400;
-}
-.hero :nth-child(2) {
-  -webkit-transform: translateZ(0.2px) scale(0.8);
-          transform: translateZ(0.2px) scale(0.8);
-  z-index: 200;
-
-}
-.hero :nth-child(3) {
-  -webkit-transform: translateZ(0.3px) scale(0.7);
-          transform: translateZ(0.3px) scale(0.7);
-  z-index: 300;
-}
-.hero :nth-child(4) {
-  -webkit-transform: translateZ(0.1px) scale(0.9);
-          transform: translateZ(0.1px) scale(0.9);
-  z-index: 100;
-}
-.hero :nth-child(5) {
-  -webkit-transform: translateZ(-2px) scale(3);
-          transform: translateZ(-2px) scale(3);
-  z-index: -2000;
-}
-.hero > * {
-  position: absolute;
-}
-
-
-@media only screen and (max-width: 768px) {
-  #hero {
-    display: none;
-  }
-
-  #hero-mobile {
-    display: block;
-  }
-}*/
-
-
-/*=====  End of Hero Parallax  ======*/
-
-
-
 /*=============================================
 =            Basic Style Overrides            =
 =============================================*/
@@ -703,6 +619,44 @@ body, body * {
     url('images/ideate.jpg') center 15% no-repeat #fff;
 }
 
+/*================================
+=            Sponsors            =
+================================*/
+
+.lnmhacks-customized-section-text > .base-text{
+  line-height: 1.5;
+}
+
+.sponsors-card .mdl-card {
+  width: 200px;
+  overflow: hidden;
+}
+.sponsors-card > .mdl-card__title-code {
+  color: #fff;
+  background:
+    url('images/code.jpg') center no-repeat #fff;
+  background-position: center;
+}
+
+.sponsors-card > .mdl-card__title-design {
+  color: #fff;
+  background:
+    url('images/design.jpg') center no-repeat #fff;
+}
+.sponsors-card > .mdl-card__title-ideate {
+  color: #fff;
+  background:
+    url('images/ideate.jpg') center no-repeat #fff;
+}
+
+.sponsors-card >.mdl-card__media{
+  overflow: hidden;
+  width: 200px;
+  background-color: #fff;
+}
+
+
+/*=====  End of Sponsors  ======*/
 
 .mdl-mega-footer--social-btn, .mdl-mega-footer__social-btn{
   background:none !important;
