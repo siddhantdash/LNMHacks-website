@@ -180,7 +180,7 @@ a img{
 
 .lnmhacks-be-together-section {
   position: relative;
-  height: 800px;
+  height: 600px;
   width: auto;
   background-color: #f3f3f3;
   background: url('images/slide01.jpg') center 30% no-repeat;
@@ -204,7 +204,7 @@ a img{
   width:30em;
   margin-left:auto;
   margin-right:auto;
-  padding-top:100px;
+  padding-top:80px;
 }
 .lnmhacks-sub-slogan {
   font-size: 21px;
@@ -316,11 +316,10 @@ a img{
 
 .lnmhacks-wear-section {
   position: relative;
-  background: url('images/wear.jpg');
-  background-size: contain;
+  /*background: url('images/wear.jpg');*/
+  background: #fff;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 800px;
+  min-height: 450px;
 }
 
 .lnmhacks-wear-band {
@@ -328,15 +327,15 @@ a img{
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: #231c3d;
+  background-color: #fff;
 }
 
 .lnmhacks-wear-band-text {
   max-width: 800px;
-  margin-left: 25%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 24px;
-  text-align: left;
-  color: white;
+  text-align: center;
 }
 
   .lnmhacks-wear-band-text p {
@@ -381,7 +380,6 @@ a img{
   
   margin-left: auto;
   margin-right:auto;
-  margin-top: 3em;
   padding: 80px 16px 0 16px;
   text-align: center;
 }
@@ -396,6 +394,7 @@ a img{
   margin-right:auto;
   text-align: center;
   margin-top:10px;
+  margin-bottom: 40px;
   font-size: 1.3em;
   font-weight:lighter;
   line-height: 1.3;
@@ -406,9 +405,10 @@ a img{
   }
 
 .lnmhacks-customized-section-image {
-  background: #fff;
+
+  background: url('images/lnmiit.jpg');
   background-size: cover;
-  min-height: 250px;
+  min-height: 600px;
 }
 
 .lnmhacks-sponsors-section-image {
@@ -595,7 +595,10 @@ a img{
 =============================================*/
 
 .hack-description{
-  padding: 4em;
+
+  margin: 0;
+  padding: 3em 4em;
+  line-height: 1.5em;
 }
 
 .demo-card-square.mdl-card {
@@ -707,6 +710,24 @@ a img{
 }
 
 
+.material-button{
+  margin-top: 4em;
+  padding:20px 20px; 
+  background-color: #4285f4; 
+  font-size:18px;
+  color: #fff !important;
+  box-shadow: none;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: all ease 0.4s;
+}
+
+.material-button:hover{
+  background-color: #2669d8;
+  color: #fff !important;
+  transition: all ease 0.4s;
+}
 
 /*=====  End of Basic Style Overrides  ======*/
 
@@ -733,6 +754,190 @@ a img{
 
 
 /*=====  End of Team Styling  ======*/
+
+/*===================================
+=            Track Cards            =
+===================================*/
+
+.track-card{
+  width:200px;
+  background-color: #fff;
+}
+
+/*=====  End of Track Cards  ======*/
+
+
+/*===========================================
+=            Head Text Animation            =
+===========================================*/
+
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 35px;
+  line-height: 40px;
+  font-family: 'Lato', sans-serif;
+  color: #ecf0f1;
+  height: 160px;
+  overflow: hidden;
+}
+
+.visible {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+/*.visible:before {
+  content: '{';
+  left: 0;
+  line-height: 40px;
+}
+.visible:after {
+  content: '}';
+  position: absolute;
+  right: 0;
+  line-height: 40px;
+}
+.visible:after, .visible:before {
+  position: absolute;
+  top: 0;
+  color: #16a085;
+  font-size: 42px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}*/
+
+.visible > p {
+   font-family: 'Titillium Web', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color:#fff;
+  font-size: 32px !important;
+  font-weight: 500;
+  line-height: 40px;
+  display: inline;
+  float: left;
+  margin: 0;
+  -webkit-filter: blur(0.000001);
+}
+
+.visible > ul {
+
+  font-family: 'Titillium Web', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color:#f44645;
+  font-size: 32px !important;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-filter: blur(0.000001);
+}
+
+.visible > ul li {
+  font-family: 'Titillium Web', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color:#f44645;
+  font-size: 32px !important;
+  font-weight: 900;
+  line-height: 40px;
+  margin: 0;
+  -webkit-filter: blur(0.000001);
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes change {
+  0%, 12%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  17%,29% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  34%,46% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  51%,63% {
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
+  }
+  68%,80% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  85%,97% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+}
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%, 12%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  17%,29% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  34%,46% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  51%,63% {
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
+  }
+  68%,80% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  85%,97% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+}
+
+/*=====  End of Head Text Animation  ======*/
 
 
 /*=========================================
@@ -787,3 +992,14 @@ body::-webkit-scrollbar-thumb
 
 
 /*=====  End of Scrollbar Styling  ======*/
+
+/*=======================================
+=            Navbar Override            =
+=======================================*/
+
+.mdl-layout__header--waterfall.is-casting-shadow{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.07),0 3px 1px -2px rgba(0,0,0,.1),0 1px 5px 0 rgba(0,0,0,.06)
+}
+
+/*=====  End of Navbar Override  ======*/
+
